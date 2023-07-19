@@ -12,3 +12,12 @@ The first commit is an authentic one:
 - it has been signed by a GPG key which has been **linked** to the author's account.
 
 You can have a look at the **commit history** of a repository at all times by navigating to the `Commits` tab in the top of the repo, or [following this link](https://github.com/cloudnativeclutter/signed-commits-case-study/commits/main).
+
+## 2. Commit - signed with a non-verified GPG key
+
+The second commit is a bit weird:
+
+- it seems to originate from `cloudnativeclutter`
+- **but** the GPG key is not verified?
+
+Maybe the user just messed up his key management, or he forgot to **upload his public gpg signing key** for this key. Mmaybe it's a quite intricate attempt of getting malicious code in - in general it's better do decline commits like this!
