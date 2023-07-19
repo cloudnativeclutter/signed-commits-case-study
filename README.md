@@ -1,6 +1,6 @@
 # Signed Commits - a case study
 
-Signing commits drastically hardens your repository against attempts to commit malicious code, e.g. via commit spoofing.Commit signing in addition to some features of GitHub, such as [Vigilante mode](https://docs.github.com/en/authentication/managing-commit-signature-verification/displaying-verification-statuses-for-all-of-your-commits), can help you make sure to only accept verified commits by contributors you know and trust. 
+Signing commits drastically hardens your repository against attempts to commit malicious code, e.g. via commit spoofing. Commit signing in addition to some features of GitHub, such as [Vigilante mode](https://docs.github.com/en/authentication/managing-commit-signature-verification/displaying-verification-statuses-for-all-of-your-commits), can help you make sure to only accept verified commits by contributors you know and trust. 
 
 This repository attempts to serve as a demo of the "look 'n feel" of commit signing on GitHub, and the different possibilities to do so.
 
@@ -45,3 +45,12 @@ The fourth commit is very similar to the first one:
 - it is `verified`
 
 The only difference is a tiny detail: Instead of a **GPG Key ID** we see a **SSH Key Fingerprint** when clicking on the `verified` badge now.
+
+### 5. Commit - signed with an unverified SSH key
+
+Let's go ahead and sign our fifth commit with a non-verified SSH key, similar to commit 2:
+
+- the author is correct
+- ...but the signature isn't
+
+Once again, GitHub warns uns that it couldn't verify whether the stated author actually *is* the author, due to the signature not being verified. That's good!
