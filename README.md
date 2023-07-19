@@ -18,6 +18,15 @@ You can have a look at the **commit history** of a repository at all times by na
 The second commit is a bit weird:
 
 - it seems to originate from `cloudnativeclutter`
-- **but** the GPG key is not verified?
+- **but** the GPG key is `unverified`?
 
-Maybe the user just messed up his key management, or he forgot to **upload his public gpg signing key** for this key. Mmaybe it's a quite intricate attempt of getting malicious code in - in general it's better do decline commits like this!
+Maybe the user just messed up his key management, or he forgot to **upload his public gpg signing key** for this key. Maybe it's a quite intricate attempt of getting malicious code in - in general it's better do decline commits like this!
+
+## 3. Commit - Who's mocdaniel?!
+
+The third commit is *definitely* weird:
+
+- despite being created by the *same* account as the previous two commits, it shows **Daniel Bodky** (my main account) as author
+- again, the commit is `unverified`, this time because I got **vigilante mode** configured for my account
+
+Spoofing commits is as easy as changing the `user.email` field of your git config, thus changing the email address **GitHub** sees upon committing. Since GitHub is a **collaborative coding platform**, it will try to resolve this email address and display the author's information - totally fooling everyone who doesn't look twice!
