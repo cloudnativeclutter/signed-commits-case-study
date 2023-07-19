@@ -54,3 +54,10 @@ Let's go ahead and sign our fifth commit with a non-verified SSH key, similar to
 - ...but the signature isn't
 
 Once again, GitHub warns uns that it couldn't verify whether the stated author actually *is* the author, due to the signature not being verified. That's good!
+
+### 6. Commit - We've been blessed by Octocat!
+
+The sixth commit seems off again. Octocat has contributed to this humble guide?
+
+- this time, it's worse - Octocat doesn't seem to use commit signatures!
+- the commit seems authentic, and without a `(un)verified` badge, it's hard to tell who wrote this commit.
